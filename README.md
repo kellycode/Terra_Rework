@@ -1,7 +1,5 @@
 # TerraFork
 
-![a 3d terrain](https://kellycode.github.io/Terra_Rework/preview.jpg)
-
 Updated to THREE r147  
 Typescript and its dependencies removed.  
 Organized to OOP standards.  
