@@ -126,6 +126,8 @@ class NTS_WORLD_C {
 
         this.terraMap = this.terramap.createTexture(this.heightField, this.LIGHT_DIR, assets.images['noise']);
         this.windIntensity = this.WIND_DEFAULT;
+        
+        console.log(this.heightMapScale)
 
 
         // Create a large patch of grass to fill the foreground

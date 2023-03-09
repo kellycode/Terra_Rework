@@ -228,7 +228,8 @@ class NTS_APP_C {
     }
 
     // Handle window resize events
-    resize() {
+    // resize = () => {} for the bind
+    resize = () => {
         this.displayWidth = this.container.clientWidth;
         this.displayHeight = this.container.clientHeight;
 
