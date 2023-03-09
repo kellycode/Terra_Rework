@@ -14,11 +14,7 @@
 "use strict";
 
 let NTS_UTIL = {
-    $e: function(id) {
-        return document.getElementById(id);
-    },
-
-    $i: function(id) {
+    getElemById: function(id) {
         return document.getElementById(id);
     },
 

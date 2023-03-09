@@ -13,6 +13,8 @@
 
 "use strict";
 
+// many setKeyPressListener in nts_world_c
+
 let NTS_INPUT = {
 
     state: {
@@ -32,6 +34,7 @@ let NTS_INPUT = {
     initialized: false,
 
     setState: function (k, s) {
+        console.log(k)
         var cs = this.state;
         // arrow keys L/R/F/B
         if (k === 37) // left arrow

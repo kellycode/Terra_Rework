@@ -29,7 +29,6 @@ class NTS_WORLD_C {
     
     // Create a World instance
     constructor(assets, numGrassBlades, grassPatchRadius, displayWidth, displayHeight, antialias) {
-        this.util_1 = NTS_UTIL;
         this.gmath_1 = NTS_GMATH;
         this.vec_1 = NTS_VEC;
         this.logger = NTS_LOGGER;
@@ -67,7 +66,7 @@ class NTS_WORLD_C {
         this.INTRO_FADE_DUR = 2000;
 
 
-        this.canvas = this.util_1.$e('app_canvas');
+        this.canvas = NTS_UTIL.getElemById('app_canvas');
 
 
         // Make canvas transparent so it isn't rendered as black for 1 frame at startup

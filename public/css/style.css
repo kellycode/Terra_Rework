@@ -25,15 +25,21 @@ a:hover {
 button {
     font-size: 1.25em;
     font-weight: bold;
-    color: #888;
-    background: #FFF;
+    color: #000;
+    background: #EEE;
     border-style: solid;
     border-width: 1px;
     border-color: #CCC;
     padding: 0.3em 0.8em 0.3em 0.8em;
     cursor: pointer;
 }
-button:hover {
+
+button:disabled {
+    color: #AAA;
+    background: #FFF;
+}
+
+button:hover:enabled {
     background: #EEE;
     color: #666;
 }
@@ -210,6 +216,8 @@ select {
 
 #logger {
     position: absolute;
+    height: 200px;
+    width: 200px;
     display: inline-block;
     right: 0;
     bottom: 0;

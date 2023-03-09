@@ -17,15 +17,15 @@ let NTS_LOGGER = {
     visible: false,
 
     setText: function (txt) {
-        NTS_UTIL.$e('logger').textContent = txt;
+        NTS_UTIL.getElemById('logger').textContent = txt;
     },
 
     setHtml: function (html) {
-        NTS_UTIL.$e('logger').innerHTML = html;
+        NTS_UTIL.getElemById('logger').innerHTML = html;
     },
 
     toggle: function () {
-        const el = NTS_UTIL.$e('logger');
+        const el = NTS_UTIL.getElemById('logger');
         this.visible = !this.visible;
         if (this.visible) {
             el.style.display = 'inline-block';
@@ -35,12 +35,12 @@ let NTS_LOGGER = {
     },
 
     hide: function () {
-        NTS_UTIL.$e('logger').style.display = 'none';
+        NTS_UTIL.getElemById('logger').style.display = 'none';
         this.visible = false;
     },
 
     show: function () {
-        NTS_UTIL.$e('logger').style.display = 'inline-block';
+        NTS_UTIL.getElemById('logger').style.display = 'inline-block';
         this.visible = true;
     },
 
