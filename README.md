@@ -2,10 +2,8 @@
 
 Updated to THREE r147  
 Typescript and its dependencies removed.  
-Organized to OOP standards.  
+Organized a bit
 
-TODOs:  
-Add a gulp builder for minification  
-Extract the grass/wind bits for easy use  
+March '23
 
 
